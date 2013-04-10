@@ -21,6 +21,7 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // ***********************************************************************
 
+using System;
 using System.Collections;
 using NUnit.Framework.Constraints;
 
@@ -33,6 +34,7 @@ namespace NUnit.Framework
 	/// <see cref="Is"/>, from which it inherits much of its
 	/// behavior, in certain mock object frameworks.
 	/// </summary>
+    [CLSCompliant(false)]
 	public class AssertionHelper : ConstraintFactory
     {
         #region Assert
