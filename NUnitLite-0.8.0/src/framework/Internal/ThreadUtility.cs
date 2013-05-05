@@ -54,9 +54,6 @@ namespace NUnit.Framework.Internal
             }
             catch (ThreadStateException)
             {
-                // Although obsolete, this use of Resume() takes care of
-                // the odd case where a ThreadStateException is received.
-                thread.Resume();
             }
 
             if ( (thread.ThreadState & ThreadState.WaitSleepJoin) != 0 )
